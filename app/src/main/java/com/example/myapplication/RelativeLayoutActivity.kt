@@ -13,8 +13,8 @@ class RelativeLayoutActivity : AppCompatActivity() {
 
         bt_Ingresar.setOnClickListener {view ->
             val myIntent = Intent(this,RelativeVsLinearActivity::class.java)
-            myIntent.putExtra("user",et_Usuario.text)
-            myIntent.putExtra("password",et_PassWord.text)
+            myIntent.putExtra("user",et_Usuario.text.toString())
+            myIntent.putExtra("password",et_PassWord.text.toString())
             startActivity(myIntent)
         }
     }
